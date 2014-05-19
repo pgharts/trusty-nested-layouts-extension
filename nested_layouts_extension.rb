@@ -1,4 +1,4 @@
-class NestedLayoutsExtension < Radiant::Extension
+class NestedLayoutsExtension < TrustyCms::Extension
   version "0.1"
   description "An extension for Radiant CMS which provides tags for creating nested layouts. "
   url "http://webadvocate.com/radiant-nested-layouts-extension"

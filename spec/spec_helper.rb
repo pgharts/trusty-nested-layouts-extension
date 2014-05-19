@@ -1,4 +1,4 @@
-unless defined? RADIANT_ROOT
+unless defined? TRUSTY_CMS_ROOT
   ENV["RAILS_ENV"] = "test"
   case
   when ENV["RADIANT_ENV_FILE"]
@@ -9,7 +9,7 @@ unless defined? RADIANT_ROOT
     require "#{File.expand_path(File.dirname(__FILE__) + "/../../../../")}/config/environment"
   end
 end
-require "#{RADIANT_ROOT}/spec/spec_helper"
+require "#{TRUSTY_CMS_ROOT}/spec/spec_helper"
 
 if File.directory?(File.dirname(__FILE__) + "/scenarios")
   Scenario.load_paths.unshift File.dirname(__FILE__) + "/scenarios"
